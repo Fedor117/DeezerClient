@@ -13,7 +13,6 @@
 		225FD695280DB136009811D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225FD694280DB136009811D2 /* AppDelegate.swift */; };
 		225FD697280DB136009811D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225FD696280DB136009811D2 /* SceneDelegate.swift */; };
 		225FD699280DB136009811D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225FD698280DB136009811D2 /* ViewController.swift */; };
-		225FD69F280DB136009811D2 /* DeezerClient.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 225FD69D280DB136009811D2 /* DeezerClient.xcdatamodeld */; };
 		225FD6A1280DB13A009811D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 225FD6A0280DB13A009811D2 /* Assets.xcassets */; };
 		225FD6A4280DB13A009811D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 225FD6A2280DB13A009811D2 /* LaunchScreen.storyboard */; };
 		225FD6AF280DB13A009811D2 /* DeezerClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225FD6AE280DB13A009811D2 /* DeezerClientTests.swift */; };
@@ -46,7 +45,6 @@
 		225FD694280DB136009811D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		225FD696280DB136009811D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		225FD698280DB136009811D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		225FD69E280DB136009811D2 /* DeezerClient.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DeezerClient.xcdatamodel; sourceTree = "<group>"; };
 		225FD6A0280DB13A009811D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		225FD6A3280DB13A009811D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		225FD6A5280DB13A009811D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -115,7 +113,6 @@
 				225FD6A0280DB13A009811D2 /* Assets.xcassets */,
 				225FD6A2280DB13A009811D2 /* LaunchScreen.storyboard */,
 				225FD6A5280DB13A009811D2 /* Info.plist */,
-				225FD69D280DB136009811D2 /* DeezerClient.xcdatamodeld */,
 				2223A5E0280DE63E00D3097B /* Secrets.swift */,
 			);
 			path = DeezerClient;
@@ -315,7 +312,6 @@
 				22C1E429280DDD30009788B2 /* SentryAppDelegate.swift in Sources */,
 				225FD695280DB136009811D2 /* AppDelegate.swift in Sources */,
 				225FD697280DB136009811D2 /* SceneDelegate.swift in Sources */,
-				225FD69F280DB136009811D2 /* DeezerClient.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -702,19 +698,6 @@
 			productName = Sentry;
 		};
 /* End XCSwiftPackageProductDependency section */
-
-/* Begin XCVersionGroup section */
-		225FD69D280DB136009811D2 /* DeezerClient.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				225FD69E280DB136009811D2 /* DeezerClient.xcdatamodel */,
-			);
-			currentVersion = 225FD69E280DB136009811D2 /* DeezerClient.xcdatamodel */;
-			path = DeezerClient.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 225FD689280DB136009811D2 /* Project object */;
 }

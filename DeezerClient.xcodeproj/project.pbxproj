@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		223B19F7280DBABF000A7322 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 223B19F6280DBABF000A7322 /* Alamofire */; };
+		223B19FB280DBB26000A7322 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 223B19FA280DBB26000A7322 /* SnapKit */; };
 		225FD695280DB136009811D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225FD694280DB136009811D2 /* AppDelegate.swift */; };
 		225FD697280DB136009811D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225FD696280DB136009811D2 /* SceneDelegate.swift */; };
 		225FD699280DB136009811D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225FD698280DB136009811D2 /* ViewController.swift */; };
@@ -58,6 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				223B19F7280DBABF000A7322 /* Alamofire in Frameworks */,
+				223B19FB280DBB26000A7322 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,12 +144,17 @@
 				225FD68D280DB136009811D2 /* Sources */,
 				225FD68E280DB136009811D2 /* Frameworks */,
 				225FD68F280DB136009811D2 /* Resources */,
+				22C56037280DBDFE00A2CBC1 /* Run SwiftLint */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = DeezerClient;
+			packageProductDependencies = (
+				223B19F6280DBABF000A7322 /* Alamofire */,
+				223B19FA280DBB26000A7322 /* SnapKit */,
+			);
 			productName = DeezerClient;
 			productReference = 225FD691280DB136009811D2 /* DeezerClient.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +227,11 @@
 				Base,
 			);
 			mainGroup = 225FD688280DB136009811D2;
+			packageReferences = (
+				223B19F5280DBABF000A7322 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				223B19F8280DBAF8000A7322 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				223B19F9280DBB26000A7322 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 225FD692280DB136009811D2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -255,6 +269,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		22C56037280DBDFE00A2CBC1 /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwfitLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		225FD68D280DB136009811D2 /* Sources */ = {
@@ -606,6 +641,46 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		223B19F5280DBABF000A7322 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		223B19F8280DBAF8000A7322 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		223B19F9280DBB26000A7322 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		223B19F6280DBABF000A7322 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 223B19F5280DBABF000A7322 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		223B19FA280DBB26000A7322 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 223B19F9280DBB26000A7322 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		225FD69D280DB136009811D2 /* DeezerClient.xcdatamodeld */ = {

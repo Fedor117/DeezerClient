@@ -7,18 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2223A5E1280DE63E00D3097B /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2223A5E0280DE63E00D3097B /* Secrets.swift */; };
 		223B19F7280DBABF000A7322 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 223B19F6280DBABF000A7322 /* Alamofire */; };
 		223B19FB280DBB26000A7322 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 223B19FA280DBB26000A7322 /* SnapKit */; };
 		225FD695280DB136009811D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225FD694280DB136009811D2 /* AppDelegate.swift */; };
 		225FD697280DB136009811D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225FD696280DB136009811D2 /* SceneDelegate.swift */; };
 		225FD699280DB136009811D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225FD698280DB136009811D2 /* ViewController.swift */; };
-		225FD69C280DB136009811D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 225FD69A280DB136009811D2 /* Main.storyboard */; };
 		225FD69F280DB136009811D2 /* DeezerClient.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 225FD69D280DB136009811D2 /* DeezerClient.xcdatamodeld */; };
 		225FD6A1280DB13A009811D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 225FD6A0280DB13A009811D2 /* Assets.xcassets */; };
 		225FD6A4280DB13A009811D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 225FD6A2280DB13A009811D2 /* LaunchScreen.storyboard */; };
 		225FD6AF280DB13A009811D2 /* DeezerClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225FD6AE280DB13A009811D2 /* DeezerClientTests.swift */; };
 		225FD6B9280DB13B009811D2 /* DeezerClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225FD6B8280DB13B009811D2 /* DeezerClientUITests.swift */; };
 		225FD6BB280DB13B009811D2 /* DeezerClientUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225FD6BA280DB13B009811D2 /* DeezerClientUITestsLaunchTests.swift */; };
+		22C1E429280DDD30009788B2 /* SentryAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C1E428280DDD30009788B2 /* SentryAppDelegate.swift */; };
+		22C1E42C280DDDA5009788B2 /* Sentry in Frameworks */ = {isa = PBXBuildFile; productRef = 22C1E42B280DDDA5009788B2 /* Sentry */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,11 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2223A5E0280DE63E00D3097B /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		225FD691280DB136009811D2 /* DeezerClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeezerClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		225FD694280DB136009811D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		225FD696280DB136009811D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		225FD698280DB136009811D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		225FD69B280DB136009811D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		225FD69E280DB136009811D2 /* DeezerClient.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DeezerClient.xcdatamodel; sourceTree = "<group>"; };
 		225FD6A0280DB13A009811D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		225FD6A3280DB13A009811D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 		225FD6B4280DB13B009811D2 /* DeezerClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeezerClientUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		225FD6B8280DB13B009811D2 /* DeezerClientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeezerClientUITests.swift; sourceTree = "<group>"; };
 		225FD6BA280DB13B009811D2 /* DeezerClientUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeezerClientUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		22C1E428280DDD30009788B2 /* SentryAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentryAppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,7 @@
 			files = (
 				223B19F7280DBABF000A7322 /* Alamofire in Frameworks */,
 				223B19FB280DBB26000A7322 /* SnapKit in Frameworks */,
+				22C1E42C280DDDA5009788B2 /* Sentry in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,14 +109,14 @@
 		225FD693280DB136009811D2 /* DeezerClient */ = {
 			isa = PBXGroup;
 			children = (
-				225FD694280DB136009811D2 /* AppDelegate.swift */,
+				22C1E427280DDD11009788B2 /* AppDelegates */,
 				225FD696280DB136009811D2 /* SceneDelegate.swift */,
 				225FD698280DB136009811D2 /* ViewController.swift */,
-				225FD69A280DB136009811D2 /* Main.storyboard */,
 				225FD6A0280DB13A009811D2 /* Assets.xcassets */,
 				225FD6A2280DB13A009811D2 /* LaunchScreen.storyboard */,
 				225FD6A5280DB13A009811D2 /* Info.plist */,
 				225FD69D280DB136009811D2 /* DeezerClient.xcdatamodeld */,
+				2223A5E0280DE63E00D3097B /* Secrets.swift */,
 			);
 			path = DeezerClient;
 			sourceTree = "<group>";
@@ -132,6 +136,15 @@
 				225FD6BA280DB13B009811D2 /* DeezerClientUITestsLaunchTests.swift */,
 			);
 			path = DeezerClientUITests;
+			sourceTree = "<group>";
+		};
+		22C1E427280DDD11009788B2 /* AppDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				225FD694280DB136009811D2 /* AppDelegate.swift */,
+				22C1E428280DDD30009788B2 /* SentryAppDelegate.swift */,
+			);
+			path = AppDelegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +167,7 @@
 			packageProductDependencies = (
 				223B19F6280DBABF000A7322 /* Alamofire */,
 				223B19FA280DBB26000A7322 /* SnapKit */,
+				22C1E42B280DDDA5009788B2 /* Sentry */,
 			);
 			productName = DeezerClient;
 			productReference = 225FD691280DB136009811D2 /* DeezerClient.app */;
@@ -231,6 +245,7 @@
 				223B19F5280DBABF000A7322 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				223B19F8280DBAF8000A7322 /* XCRemoteSwiftPackageReference "realm-swift" */,
 				223B19F9280DBB26000A7322 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				22C1E42A280DDDA5009788B2 /* XCRemoteSwiftPackageReference "sentry-cocoa" */,
 			);
 			productRefGroup = 225FD692280DB136009811D2 /* Products */;
 			projectDirPath = "";
@@ -250,7 +265,6 @@
 			files = (
 				225FD6A4280DB13A009811D2 /* LaunchScreen.storyboard in Resources */,
 				225FD6A1280DB13A009811D2 /* Assets.xcassets in Resources */,
-				225FD69C280DB136009811D2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +311,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				225FD699280DB136009811D2 /* ViewController.swift in Sources */,
+				2223A5E1280DE63E00D3097B /* Secrets.swift in Sources */,
+				22C1E429280DDD30009788B2 /* SentryAppDelegate.swift in Sources */,
 				225FD695280DB136009811D2 /* AppDelegate.swift in Sources */,
 				225FD697280DB136009811D2 /* SceneDelegate.swift in Sources */,
 				225FD69F280DB136009811D2 /* DeezerClient.xcdatamodeld in Sources */,
@@ -336,14 +352,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		225FD69A280DB136009811D2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				225FD69B280DB136009811D2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		225FD6A2280DB13A009811D2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -481,7 +489,7 @@
 				INFOPLIST_FILE = DeezerClient/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -509,7 +517,7 @@
 				INFOPLIST_FILE = DeezerClient/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -667,6 +675,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		22C1E42A280DDDA5009788B2 /* XCRemoteSwiftPackageReference "sentry-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/getsentry/sentry-cocoa.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -679,6 +695,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 223B19F9280DBB26000A7322 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		22C1E42B280DDDA5009788B2 /* Sentry */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 22C1E42A280DDDA5009788B2 /* XCRemoteSwiftPackageReference "sentry-cocoa" */;
+			productName = Sentry;
 		};
 /* End XCSwiftPackageProductDependency section */
 

@@ -9,13 +9,31 @@ import UIKit
 import CoreData
 
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate {
+final class AppDelegate: UIResponder, UIApplicationDelegate {
+    var window: UIWindow?
+    
+    private var appDelegates = [UIApplicationDelegate]()
+    
+    override init() {
+        super.init()
+        
+        appDelegates = [SentryAppDelegate()]
+    }
+    
+    func application(_ application: UIApplication,
+                     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?)
+    -> Bool {
+        appDelegates.forEach { _ = $0.application?(application, didFinishLaunchingWithOptions: launchOptions) }
 
-
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
         return true
+    }
+    
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        appDelegates.forEach { _ = $0.applicationDidBecomeActive?(application) }
+    }
+    
+    func applicationWillResignActive(_ application: UIApplication) {
+        appDelegates.forEach { _ = $0.applicationWillResignActive?(application) }
     }
 
     // MARK: UISceneSession Lifecycle
@@ -76,6 +94,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
+}
 
+// MARK: - Notifications
+
+extension AppDelegate {
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        appDelegates.forEach { _ = $0.application?(application, didRegisterForRemoteNotificationsWithDeviceToken: deviceToken) }
+    }
 }
 

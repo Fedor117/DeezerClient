@@ -89,5 +89,5 @@ fastlane/test_output
 
 iOSInjectionProject/
 
-DeezerClient/DeezerClient/Secrets.swift
+DeezerClient/Secrets.swift
 

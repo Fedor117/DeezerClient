@@ -13,13 +13,13 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     private var appDelegates = [UIApplicationDelegate]()
-    
+
     override init() {
         super.init()
-        
-        appDelegates = [SentryAppDelegate()]
+
+        appDelegates.append(SentryAppDelegate())
     }
-    
+
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?)
     -> Bool {
@@ -27,18 +27,20 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
 
         return true
     }
-    
+
     func applicationDidBecomeActive(_ application: UIApplication) {
         appDelegates.forEach { _ = $0.applicationDidBecomeActive?(application) }
     }
-    
+
     func applicationWillResignActive(_ application: UIApplication) {
         appDelegates.forEach { _ = $0.applicationWillResignActive?(application) }
     }
 
     // MARK: UISceneSession Lifecycle
 
-    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
+    func application(_ application: UIApplication,
+                     configurationForConnecting connectingSceneSession: UISceneSession,
+                     options: UIScene.ConnectionOptions) -> UISceneConfiguration {
         // Called when a new scene session is being created.
         // Use this method to select a configuration to create the new scene with.
         return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
@@ -64,7 +66,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
             if let error = error as NSError? {
                 // Replace this implementation with code to handle the error appropriately.
                 // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                 
+
                 /*
                  Typical reasons for an error here include:
                  * The parent directory does not exist, cannot be created, or disallows writing.
@@ -100,7 +102,8 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
 
 extension AppDelegate {
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-        appDelegates.forEach { _ = $0.application?(application, didRegisterForRemoteNotificationsWithDeviceToken: deviceToken) }
+        appDelegates.forEach { _ = $0.application?(application,
+                                                   didRegisterForRemoteNotificationsWithDeviceToken: deviceToken)
+        }
     }
 }
-

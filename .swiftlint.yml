@@ -1,0 +1,6 @@
+included:
+  - DeezerClient
+  - DeezerClientTests
+  - DeezerClientUITests
+excluded:
+  - DerivedData

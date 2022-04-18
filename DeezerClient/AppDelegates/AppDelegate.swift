@@ -10,7 +10,7 @@ import UIKit
 @main
 final class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
-    
+
     private var appDelegates = [UIApplicationDelegate]()
 
     override init() {

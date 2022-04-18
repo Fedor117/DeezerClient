@@ -10,6 +10,7 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
+    var searchFlow: SearchFlowing?
 
     func scene(_ scene: UIScene,
                willConnectTo session: UISceneSession,
@@ -18,9 +19,24 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let windowScene = (scene as? UIWindowScene) else { return }
+
+        let tabBar = DCTabBarController()
+        let searchNavigationController = UINavigationController()
+        searchNavigationController.navigationBar.prefersLargeTitles = true
+        searchNavigationController.tabBarItem.image = UIImage(systemName: "magnifyingglass")
+        searchNavigationController.tabBarItem.title = "Search"
+        tabBar.addChild(searchNavigationController)
+ 
+        searchFlow = SearchFlow(
+            router: FlowRoutingService(navigationController: searchNavigationController),
+            screenFactory: SearchScreenFactory(),
+            flowRunner: FlowRunner())
+
         window = UIWindow(windowScene: windowScene)
-        window?.rootViewController = ViewController()
+        window?.rootViewController = tabBar
         window?.makeKeyAndVisible()
+
+        searchFlow?.runFlow()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

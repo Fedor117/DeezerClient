@@ -8,11 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		2223A5E1280DE63E00D3097B /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2223A5E0280DE63E00D3097B /* Secrets.swift */; };
+		2223A5E4280DEDD200D3097B /* DCTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2223A5E3280DEDD200D3097B /* DCTabBarController.swift */; };
+		2223A5E8280DEEFD00D3097B /* SearchFlowing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2223A5E7280DEEFD00D3097B /* SearchFlowing.swift */; };
+		2223A5ED280DF26900D3097B /* FlowRoutingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2223A5EC280DF26900D3097B /* FlowRoutingService.swift */; };
+		2223A5EF280DF28500D3097B /* FlowRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2223A5EE280DF28500D3097B /* FlowRouting.swift */; };
+		2223ABAF280E09C200DE1B95 /* FlowRunning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2223ABAE280E09C200DE1B95 /* FlowRunning.swift */; };
+		2223ABB1280E0A0F00DE1B95 /* FlowRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2223ABB0280E0A0F00DE1B95 /* FlowRunner.swift */; };
+		2223ABB3280E0A5E00DE1B95 /* SearchFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2223ABB2280E0A5E00DE1B95 /* SearchFlow.swift */; };
+		2223ABB6280E0AFA00DE1B95 /* SearchFlowScreenMaking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2223ABB5280E0AFA00DE1B95 /* SearchFlowScreenMaking.swift */; };
+		2223ABB8280E0B3E00DE1B95 /* SearchScreenFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2223ABB7280E0B3E00DE1B95 /* SearchScreenFactory.swift */; };
 		223B19F7280DBABF000A7322 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 223B19F6280DBABF000A7322 /* Alamofire */; };
 		223B19FB280DBB26000A7322 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 223B19FA280DBB26000A7322 /* SnapKit */; };
 		225FD695280DB136009811D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225FD694280DB136009811D2 /* AppDelegate.swift */; };
 		225FD697280DB136009811D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225FD696280DB136009811D2 /* SceneDelegate.swift */; };
-		225FD699280DB136009811D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225FD698280DB136009811D2 /* ViewController.swift */; };
+		225FD699280DB136009811D2 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225FD698280DB136009811D2 /* SearchViewController.swift */; };
 		225FD6A1280DB13A009811D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 225FD6A0280DB13A009811D2 /* Assets.xcassets */; };
 		225FD6A4280DB13A009811D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 225FD6A2280DB13A009811D2 /* LaunchScreen.storyboard */; };
 		225FD6AF280DB13A009811D2 /* DeezerClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225FD6AE280DB13A009811D2 /* DeezerClientTests.swift */; };
@@ -41,10 +50,19 @@
 
 /* Begin PBXFileReference section */
 		2223A5E0280DE63E00D3097B /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
+		2223A5E3280DEDD200D3097B /* DCTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCTabBarController.swift; sourceTree = "<group>"; };
+		2223A5E7280DEEFD00D3097B /* SearchFlowing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFlowing.swift; sourceTree = "<group>"; };
+		2223A5EC280DF26900D3097B /* FlowRoutingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowRoutingService.swift; sourceTree = "<group>"; };
+		2223A5EE280DF28500D3097B /* FlowRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowRouting.swift; sourceTree = "<group>"; };
+		2223ABAE280E09C200DE1B95 /* FlowRunning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowRunning.swift; sourceTree = "<group>"; };
+		2223ABB0280E0A0F00DE1B95 /* FlowRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowRunner.swift; sourceTree = "<group>"; };
+		2223ABB2280E0A5E00DE1B95 /* SearchFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFlow.swift; sourceTree = "<group>"; };
+		2223ABB5280E0AFA00DE1B95 /* SearchFlowScreenMaking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFlowScreenMaking.swift; sourceTree = "<group>"; };
+		2223ABB7280E0B3E00DE1B95 /* SearchScreenFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchScreenFactory.swift; sourceTree = "<group>"; };
 		225FD691280DB136009811D2 /* DeezerClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeezerClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		225FD694280DB136009811D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		225FD696280DB136009811D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		225FD698280DB136009811D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		225FD698280DB136009811D2 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		225FD6A0280DB13A009811D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		225FD6A3280DB13A009811D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		225FD6A5280DB13A009811D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -84,6 +102,69 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2223A5E2280DEB9700D3097B /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				2223ABB4280E0A9800DE1B95 /* Factories */,
+				2223A5E5280DEEB000D3097B /* Flows */,
+				225FD698280DB136009811D2 /* SearchViewController.swift */,
+				2223A5E3280DEDD200D3097B /* DCTabBarController.swift */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		2223A5E5280DEEB000D3097B /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				2223A5E6280DEEE900D3097B /* Search */,
+				2223ABAE280E09C200DE1B95 /* FlowRunning.swift */,
+				2223ABB0280E0A0F00DE1B95 /* FlowRunner.swift */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		2223A5E6280DEEE900D3097B /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				2223A5E7280DEEFD00D3097B /* SearchFlowing.swift */,
+				2223ABB2280E0A5E00DE1B95 /* SearchFlow.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		2223A5E9280DEF5F00D3097B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2223A5EA280DEF6900D3097B /* Artist */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2223A5EA280DEF6900D3097B /* Artist */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Artist;
+			sourceTree = "<group>";
+		};
+		2223A5EB280DF25100D3097B /* FlowRouting */ = {
+			isa = PBXGroup;
+			children = (
+				2223A5EC280DF26900D3097B /* FlowRoutingService.swift */,
+				2223A5EE280DF28500D3097B /* FlowRouting.swift */,
+			);
+			path = FlowRouting;
+			sourceTree = "<group>";
+		};
+		2223ABB4280E0A9800DE1B95 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				2223ABB5280E0AFA00DE1B95 /* SearchFlowScreenMaking.swift */,
+				2223ABB7280E0B3E00DE1B95 /* SearchScreenFactory.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
 		225FD688280DB136009811D2 = {
 			isa = PBXGroup;
 			children = (
@@ -108,9 +189,11 @@
 			isa = PBXGroup;
 			children = (
 				22C1E427280DDD11009788B2 /* AppDelegates */,
-				225FD696280DB136009811D2 /* SceneDelegate.swift */,
-				225FD698280DB136009811D2 /* ViewController.swift */,
+				2223A5E9280DEF5F00D3097B /* Models */,
+				2223A5E2280DEB9700D3097B /* Interface */,
+				2223A5EB280DF25100D3097B /* FlowRouting */,
 				225FD6A0280DB13A009811D2 /* Assets.xcassets */,
+				225FD696280DB136009811D2 /* SceneDelegate.swift */,
 				225FD6A2280DB13A009811D2 /* LaunchScreen.storyboard */,
 				225FD6A5280DB13A009811D2 /* Info.plist */,
 				2223A5E0280DE63E00D3097B /* Secrets.swift */,
@@ -307,10 +390,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				225FD699280DB136009811D2 /* ViewController.swift in Sources */,
+				225FD699280DB136009811D2 /* SearchViewController.swift in Sources */,
 				2223A5E1280DE63E00D3097B /* Secrets.swift in Sources */,
+				2223A5EF280DF28500D3097B /* FlowRouting.swift in Sources */,
 				22C1E429280DDD30009788B2 /* SentryAppDelegate.swift in Sources */,
+				2223A5E8280DEEFD00D3097B /* SearchFlowing.swift in Sources */,
+				2223ABAF280E09C200DE1B95 /* FlowRunning.swift in Sources */,
+				2223ABB8280E0B3E00DE1B95 /* SearchScreenFactory.swift in Sources */,
+				2223A5ED280DF26900D3097B /* FlowRoutingService.swift in Sources */,
 				225FD695280DB136009811D2 /* AppDelegate.swift in Sources */,
+				2223A5E4280DEDD200D3097B /* DCTabBarController.swift in Sources */,
+				2223ABB6280E0AFA00DE1B95 /* SearchFlowScreenMaking.swift in Sources */,
+				2223ABB3280E0A5E00DE1B95 /* SearchFlow.swift in Sources */,
+				2223ABB1280E0A0F00DE1B95 /* FlowRunner.swift in Sources */,
 				225FD697280DB136009811D2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
